@@ -1,22 +1,18 @@
 package test2;
+class person{
+	String name;
+	int age;
+	void speak( ) {
+		System.out.println("My name is:" + name);
+	}
+	}
 
 public class student2 {
-	public int  Roll;
-	protected String Name;
-	private float Mark;
- private String subject;
- 
- void setData(int Roll, String Name, float Mark,String subject) {
-		this.Roll = Roll ;
-		this.Name = Name;
-		this.Mark = Mark ;
-		this.subject=subject;}
+	public static void main(String[] args){
+		person person1 =new person();
+		person1.name = "Raghib";
+		person1.age =25;
 		
-		void display(){
-			
-			System.out.println("Roll is : " + Roll);
-			System.out.println("Name is : " + Name);
-			System.out.println("Mark is : " + Mark) ;
-			System.out.println("subject is :"+subject);
+		person1.speak();
 	}
-	}
+}
